@@ -1,0 +1,1 @@
+# Fazilabi-Patika_PostgreSQL_odev12
