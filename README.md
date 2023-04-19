@@ -19,7 +19,17 @@
 
 
 ### 3. film tablosunda en düşük rental_rate ve en düşün replacement_cost değerlerine sahip filmleri sıralayınız.
-
+`SELECT title,  rental_rate, replacement_cost FROM film` <br>
+`WHERE `<br>
+`rental_rate = `<br>
+`(`<br>
+`	SELECT MIN(rental_rate) FROM film`<br>
+`)`<br>
+`AND `<br>
+`replacement_cost = `<br>
+`(`<br>
+`	SELECT MIN(replacement_cost) FROM film`<br>
+`);`
 
 
 ### 4. payment tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız. 
